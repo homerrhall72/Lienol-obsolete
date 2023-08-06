@@ -45,18 +45,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_Trojan
 	bool "Include Trojan"
 	default n
 	
-config PACKAGE_$(PKG_NAME)_INCLUDE_Brook
-	bool "Include Brook"
-	default n
-	
-config PACKAGE_$(PKG_NAME)_INCLUDE_kcptun
-	bool "Include kcptun"
-	default n
 
-config PACKAGE_$(PKG_NAME)_INCLUDE_haproxy
-	bool "Include haproxy"
-	default y
-	
 config PACKAGE_$(PKG_NAME)_INCLUDE_ChinaDNS_NG
 	bool "Include ChinaDNS-NG"
 	default y
@@ -75,6 +64,10 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_v2ray-plugin
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_simple-obfs
 	bool "Include simple-obfs (Shadowsocks plugin)"
+	default n
+
+config PACKAGE_$(PKG_NAME)_INCLUDE_kcptun
+	bool "Include kcptun"
 	default n
 
 endmenu
