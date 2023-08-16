@@ -4,10 +4,6 @@
 #
 
 include $(TOPDIR)/rules.mk
-
-PKG_NAME:=luci-app-passwall
-PKG_VERSION:=3.6
-
 PKG_BUILD_DIR := $(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 
 include $(INCLUDE_DIR)/package.mk
